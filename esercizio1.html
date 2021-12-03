@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .bt {
+            width: 500px;
+            height: 48px;
+            padding: 10px;
+            margin: 10px;
+            border: solid black 1px;}
+            
+        .btt1 {background-color: cadetblue;}
+        .btt2 {background-color: rgb(101, 95, 160);}
+        .btt3 {background-color: rgb(160, 139, 95);}
+        .btt4 {background-color: rgb(147, 95, 160);}
+        .btt5 {background-color: rgb(160, 95, 95);}
+        .btt6 {background-color: rgb(106, 160, 95);}
+        .btt7 {background-color: rgb(160, 132, 95);}
+        .btt8 {background-color: rgb(95, 118, 160);}
+        .btt9 {background-color: rgb(217, 243, 122);}
+
+        .ot {
+            float: center;}
+
+        .text{font-family: sans-serif;
+              color: blueviolet;}
+        
+        
+
+        </style>
+
+
+</head>
+<body>
+
+    <h1>Tabelline con JavaScript</h1>
+
+    <p class="text">
+        Fare click sul tasto una volta se si vuole visualizzare la teballina al posto della scritta,<br>
+        fare doppio click se la si vuole visualizzare come alert, <br>
+        fare click su "tasto reset" se si vuole tornare alla scritta iniziale.
+    </p>
+
+    
+      <button class="btt1 bt" onclick="tabellinadel2()" ondblclick="alert2()">Tabellina del 2 </button> <br>
+      <button class="btt2 bt" onclick="tabellinadel3()" ondblclick="alert3()">Tabellina del 3</button> <br>
+      <button class="btt3 bt" onclick="tabellinadel4()" ondblclick="alert4()">Tabellina del 4</button> <br>
+      <button class="btt4 bt" onclick="tabellinadel5()" ondblclick="alert5()">Tabellina del 5</button> <br>
+      <button class="btt5 bt" onclick="tabellinadel6()" ondblclick="alert6()">Tabellina del 6</button> <br>
+      <button class="btt6 bt" onclick="tabellinadel7()" ondblclick="alert7()">Tabellina del 7</button> <br>
+      <button class="btt7 bt" onclick="tabellinadel8()" ondblclick="alert8()">Tabellina del 8</button> <br>
+      <button class="btt8 bt" onclick="tabellinadel9()" ondblclick="alert9()">Tabellina del 9</button> <br>
+      <button class="btt9 bt" onclick="tabellinadel10()" ondblclick="alert10()">Tabellina del 10</button> <br>
+      <p id="output" class="ot text">tabellina del </p>
+      <button class="canc bt" onclick="reset()">Tasto Reset</button> <br>
+
+<script>  
+
+function tabellinadel2() {
+    document.getElementById("output").innerHTML="del due: 2 4 6 8 10 12 14 16 18 20";}
+function tabellinadel3() {
+    document.getElementById("output").innerHTML="del tre: 3 6 9 12 15 18 21 24 27 30";}
+function tabellinadel4() {
+    document.getElementById("output").innerHTML="del quattro: 4 8 12 16 20 24 28 32 36 40";}
+function tabellinadel5() {
+    document.getElementById("output").innerHTML="del cinque: 5 10 15 20 25 30 35 40 45 50";}
+function tabellinadel6() {
+    document.getElementById("output").innerHTML="del sei: 6 12 18 24 30 36 42 48 54 60";}
+function tabellinadel7() {
+    document.getElementById("output").innerHTML="del sette: 7 14 21 28 35 42 49 56 63 70";}
+function tabellinadel8() {
+    document.getElementById("output").innerHTML="dell'otto: 8 16 24 32 40 48 56 64 72 80";}
+function tabellinadel9() {
+    document.getElementById("output").innerHTML="del nove: 9 18 27 36 45 54 64 73 82 90";}
+function tabellinadel10() {
+    document.getElementById("output").innerHTML="del dieci: 10 20 30 40 50 60 70 80 90 100";}
+function reset() {
+    document.getElementById("output").innerHTML="tabellina del"}
+    
+
+
+function alert2() {
+    alert("tabellina del due: 2 4 6 8 10 12 14 16 18 20")}
+function alert3() {
+    alert("tabellina del tre: 3 6 9 12 15 18 21 24 27 30")}
+function alert4() {
+    alert("tabellina del quattro: 4 8 12 16 20 24 28 32 36 40")}
+function alert5() {
+    alert("tabellina del cinque: 5 10 15 20 25 30 35 40 45 50")}
+function alert6() {
+    alert("tabellina del sei: 6 12 18 24 30 36 42 48 54 60")}
+function alert7() {
+    alert("tabellina del sette: 7 14 21 28 35 42 49 56 63 70")}
+function alert8() {
+    alert("tabellina dell'otto: 8 16 24 32 40 48 56 64 72 80")}
+function alert9() {
+    alert("del nove: 9 18 27 36 45 54 64 73 82 90")}
+function alert10() {
+    alert("del dieci: 10 20 30 40 50 60 70 80 90 100")}
+    
+    
+
+
+</script>
+
+
+
+
+   
+</body>
+</html>
