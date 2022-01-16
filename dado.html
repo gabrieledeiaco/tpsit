@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+</html>
+  <style>
+    #boxe1 {background-color:red;}
+    #boxe2 {background-color:blue;}
+    #boxe3 {background-color: yellow;}
+    #boxe4 {background-color:green; }
+    
+    .generalbox{height: 200px;
+                width: 200px;
+                margin: 2px;
+                padding: 2px;
+                border: outset black;
+                float: left;}
+
+    .text {font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           font-size: 50px;
+           text-align: center;}
+   
+  </style>
+ 
+   
+
+
+
+
+
+
+    <div id="boxe1" class="generalbox">
+        <button id="b" onclick="random1();">
+                lancia il dado
+        </button>
+
+        <p id="number1"class="text">
+
+        </p>
+    </div>
+
+    <div id="boxe2" class="generalbox">
+        <button id="b" onclick="random2();">
+                lancia il dado
+        </button>
+        <p id="number2" class="text">
+
+        </p>
+    </div>
+
+    <div id="boxe3" class="generalbox">
+        <button id="b" onclick="random3();">
+                lancia il dado
+        </button>
+        <p id="number3" class="text">
+
+        </p>
+    </div>
+
+    <div id="boxe4" class="generalbox">
+        <button id="b" onclick="random4();">
+                lancia il dado
+        </button>
+        <p id="number4" class="text">
+
+        </p>
+    </div>
+  
+
+
+
+
+    <script>
+       
+            function random1() { document.getElementById("number1").innerText=Math.floor(Math.random()*6) }
+
+            function random2() { document.getElementById("number2").innerText=Math.floor(Math.random()*6) }
+
+            function random3() { document.getElementById("number3").innerText=Math.floor(Math.random()*6) }
+
+            function random4() { document.getElementById("number4").innerText=Math.floor(Math.random()*6) }
+  
+    </script>
+    </html>
