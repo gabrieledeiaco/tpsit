@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #es1{
+
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+        background-color: grey;
+        margin: 10px;
+    }
+
+    #compari
+    {
+      height:5px;
+      width: 5px;
+      background-color:gray;
+    }
+
+    #div2{
+      height: 200px;
+      width: 200px;
+      float: left;
+      background-color: grey;
+      margin: 10px;
+    }
+</style>
+
+
+<body>
+
+    <div id="es1">
+       <button onclick="lancio()">es 1</button>
+      
+       <p id="outes1">.....</p>
+      
+        <div id="compari">
+
+    </div>
+    </div>
+
+    <div id="div2">
+      <button onclick="lancio5()">es 5</button>
+       <p id="outset5">....</p>
+    </div>
+     
+    <script>
+        function lancio() {
+            let dado=0;
+            dado=Math.round((Math.random()*9)+1);
+            document.getElementById("outes1").innerHTML=dado+ " ";
+            if(dado>2){
+        document.getElementById("compari").style.backgroundColor="red";}
+        if(dado<2){
+        document.getElementById("compari").style.backgroundColor="grey";}
+    
+            return dado;
+
+}
+
+            function lancio5() {
+            let dado5=0;
+            dado5=Math.round((Math.random()*9)+1);
+            document.getElementById("outest5").innerHTML=dado5+ " ";
+            return dado5;
+            
+        }  
+
+        
+    </script>
+
+
+</body>
+</html>
