@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINIGIOCO CONTA CLICK</title>
+    <style>
+        #miodiv
+        {
+            height: 200px;
+            width: 200px;
+            background-color: darkgray;
+        }
+
+        #miobutton
+        {
+            height: 50px;
+            width: 50px;
+            border: 1px black;
+            margin: 70px;
+        }
+
+        #mioout1
+        {
+            color: grey;
+            font-size: 15px;
+               
+        }
+
+        #start
+        {
+            color: grey;
+            font-size: 30px;
+               
+        }
+
+        #miocountdown
+        {
+            color: grey;
+            font-size: 30px;
+            float: center;
+        }
+
+        </style>
+       
+</head>
+<body>
+    
+</body>
+<p id="start"> IL MINIGIOCO INIZIA TRA: </p>
+<p id="miocountdown"></p>
+<div id="miodiv">
+
+    <button id="miobutton" onclick=" contaclick()"> 
+
+        <p id="mioout1"> clicca QUI </p>
+    </button>
+
+</div>
+<script>
+    mioIntervallo=setInterval(startCountDown, 1000);
+        let countdown=3;
+        
+        function startCountDown() {
+            document.getElementById("miocountdown").innerHTML=countdown.toString();
+            countdown--;
+            if(countdown==-1)
+            {
+              clearInterval(mioIntervallo);
+            }
+    
+        }       
+    let contatore=0;
+    function contaclick (){
+        contatore++;
+        document .getElementById("mioout1").innerHTML=contatore.toString();
+        cambiasfondoaldiv();
+
+    }
+    function cambiasfondoaldiv(){
+        document.getElementById("miodiv").style.backgroundColor="red";
+    }
+</script>
+</html>
